@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Yakovleva"
         mc:Ignorable="d"
-        Title="Управление сотрудниками" SizeToContent="WidthAndHeight">
+        Title="Управление сотрудниками" SizeToContent="WidthAndHeight" MinHeight="300" MinWidth="400">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
@@ -14,13 +14,16 @@
         </Grid.RowDefinitions>
 
         <Grid.ColumnDefinitions>
-            <ColumnDefinition />
+            <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
-        <StackPanel>
-            <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Center" Height="306" Margin="0,18,0,0" VerticalAlignment="Top" Width="800"/>
-            <Button Content="Уволить выбранного сотрудника" HorizontalAlignment="Center" Margin="0,341,0,0" VerticalAlignment="Top"/>
-            <Button Content="Добавить нового сотрудника" HorizontalAlignment="Center" Margin="0,380,0,0" VerticalAlignment="Top"/>
+        <StackPanel Grid.Row="0">
+            <DataGrid x:Name="EmployeesGrid" AutoGenerateColumns="True" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" CanUserAddRows="False"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,30,0,0">
+            <Button Content="Уволить выбранного сотрудника" Margin="10"/>
+            <Button Content="Добавить нового сотрудника" Margin="10"/>
         </StackPanel>
     </Grid>
 </Window>
