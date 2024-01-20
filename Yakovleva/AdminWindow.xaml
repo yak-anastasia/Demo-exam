@@ -3,9 +3,9 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Yakovleva.Admin"
+        xmlns:local="clr-namespace:Yakovleva"
         mc:Ignorable="d"
-        Title="Администратор" SizeToContent="WidthAndHeight">
+        Title="Администратор" SizeToContent="WidthAndHeight" Background="#3B83BD">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
@@ -18,24 +18,24 @@
         </Grid.ColumnDefinitions>
 
         <StackPanel Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center">
-            <Button Content="Управление сотрудниками" MinWidth="200" MinHeight="50" Margin="10">
+            <Button Content="Управление сотрудниками" MinWidth="200" MinHeight="50" Margin="10" BorderBrush="AliceBlue" Foreground="AliceBlue">
                 <Button.Background>
-                    <SolidColorBrush Color="#FFABD5F7"/>
+                    <SolidColorBrush Color="#FF105F9E"/>
                 </Button.Background>
             </Button>
-            <Button Content="Управление заказами" MinWidth="200" MinHeight="50" Margin="10">
+            <Button Content="Управление заказами" MinWidth="200" MinHeight="50" Margin="10" BorderBrush="AliceBlue" Foreground="AliceBlue">
                 <Button.Background>
-                    <SolidColorBrush Color="#FF5DAFF1"/>
+                    <SolidColorBrush Color="#FF105F9E"/>
                 </Button.Background>
             </Button>
-            <Button Content="Управление сменами" MinWidth="200" MinHeight="50" Margin="10">
+            <Button Content="Управление сменами" MinWidth="200" MinHeight="50" Margin="10" BorderBrush="AliceBlue" Foreground="AliceBlue">
                 <Button.Background>
-                    <SolidColorBrush Color="#FF2B628E"/>
+                    <SolidColorBrush Color="#FF105F9E"/>
                 </Button.Background>
             </Button>
-            <Button Content="Выйти" Margin="10" Height="30" Width="200" BorderBrush="Green">
+            <Button Content="Выйти" Margin="10" Height="30" Width="200" BorderBrush="AliceBlue" FontWeight="Bold" Foreground="#3B83BD" Click="Button_Click">
                 <Button.Background>
-                    <SolidColorBrush Color="Green"/>
+                    <SolidColorBrush Color="AliceBlue"/>
                 </Button.Background>
             </Button>
         </StackPanel>

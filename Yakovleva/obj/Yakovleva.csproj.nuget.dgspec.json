@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\IAkovleva.A.A\\source\\repos\\Yakovleva\\Yakovleva\\Yakovleva.csproj": {}
+    "C:\\Users\\Anastasia\\Desktop\\Demo-exam\\Yakovleva\\Yakovleva.csproj": {}
   },
   "projects": {
-    "C:\\Users\\IAkovleva.A.A\\source\\repos\\Yakovleva\\Yakovleva\\Yakovleva.csproj": {
+    "C:\\Users\\Anastasia\\Desktop\\Demo-exam\\Yakovleva\\Yakovleva.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\IAkovleva.A.A\\source\\repos\\Yakovleva\\Yakovleva\\Yakovleva.csproj",
+        "projectUniqueName": "C:\\Users\\Anastasia\\Desktop\\Demo-exam\\Yakovleva\\Yakovleva.csproj",
         "projectName": "Yakovleva",
-        "projectPath": "C:\\Users\\IAkovleva.A.A\\source\\repos\\Yakovleva\\Yakovleva\\Yakovleva.csproj",
-        "packagesPath": "C:\\Users\\IAkovleva.A.A\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\IAkovleva.A.A\\source\\repos\\Yakovleva\\Yakovleva\\obj\\",
+        "projectPath": "C:\\Users\\Anastasia\\Desktop\\Demo-exam\\Yakovleva\\Yakovleva.csproj",
+        "packagesPath": "C:\\Users\\Anastasia\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Anastasia\\Desktop\\Demo-exam\\Yakovleva\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\IAkovleva.A.A\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Anastasia\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

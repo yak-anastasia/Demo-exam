@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Yakovleva"
         mc:Ignorable="d"
-        Title="Управление сотрудниками" SizeToContent="WidthAndHeight" MinHeight="300" MinWidth="400">
+        Title="Управление сотрудниками" SizeToContent="WidthAndHeight" Background="#3B83BD">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
@@ -17,13 +17,18 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
-        <StackPanel Grid.Row="0">
-            <DataGrid x:Name="EmployeesGrid" AutoGenerateColumns="True" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" CanUserAddRows="False"/>
-        </StackPanel>
-
-        <StackPanel Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,30,0,0">
-            <Button Content="Уволить выбранного сотрудника" Margin="10"/>
-            <Button Content="Добавить нового сотрудника" Margin="10"/>
+        <StackPanel Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,7,0,0">
+            <DataGrid x:Name="EmployeesGrid" AutoGenerateColumns="True" CanUserAddRows="False" Height="200" Background="#FFABD5F7"/>
+            <Button Content="Уволить выбранного сотрудника" Margin="20,10,20,0" Padding="8" BorderBrush="AliceBlue" Foreground="AliceBlue">
+                <Button.Background>
+                    <SolidColorBrush Color="#FF105F9E"/>
+                </Button.Background>
+            </Button>
+            <Button Content="Добавить нового сотрудника" Margin="20,10,20,10" Padding="8" BorderBrush="AliceBlue" Foreground="AliceBlue">
+                <Button.Background>
+                    <SolidColorBrush Color="#FF105F9E"/>
+                </Button.Background>
+            </Button>
         </StackPanel>
     </Grid>
 </Window>

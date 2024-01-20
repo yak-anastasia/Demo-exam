@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Yakovleva"
         mc:Ignorable="d"
-        Title="Авторизация" SizeToContent="WidthAndHeight">
+        Title="Авторизация" SizeToContent="WidthAndHeight"  Background="#3B83BD">
     <Grid>
         <!--Определение строк сетки-->
         <Grid.RowDefinitions>
@@ -24,7 +24,7 @@
         </Grid.ColumnDefinitions>
 
         <!--StackPanel для упорядочивания элементов в столбце и центрирования-->
-        <StackPanel Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Background="#3B83BD">
+        <StackPanel Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center">
             <!--Label для отображения текста "Логин:"-->
             <Label Content="Логин:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10" Foreground="AliceBlue"/>
             <!--TextBox для ввода логина-->
