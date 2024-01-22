@@ -19,6 +19,9 @@
     <Compile Update="Orders.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Shifts.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="AddEmployee.xaml">
@@ -34,6 +37,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Orders.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Shifts.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

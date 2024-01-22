@@ -33,7 +33,7 @@
                     <SolidColorBrush Color="#FF105F9E"/>
                 </Button.Background>
             </Button>
-            <Button Content="Выйти" Margin="10" Height="30" Width="200" BorderBrush="AliceBlue" FontWeight="Bold" Foreground="#3B83BD" Click="Button_Click">
+            <Button Style="{StaticResource CornerRadius_14}" Content="Выйти" Margin="10" Height="30" Width="200" BorderBrush="AliceBlue" FontWeight="Bold" Foreground="#3B83BD">
                 <Button.Background>
                     <SolidColorBrush Color="AliceBlue"/>
                 </Button.Background>
