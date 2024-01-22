@@ -19,12 +19,12 @@
 
         <StackPanel Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,7,0,0">
             <DataGrid x:Name="EmployeesGrid" AutoGenerateColumns="True" CanUserAddRows="False" Height="200" Background="#FFABD5F7"/>
-            <Button Content="Уволить выбранного сотрудника" Margin="20,10,20,0" Padding="8" BorderBrush="AliceBlue" Foreground="AliceBlue">
+            <Button Content="Уволить выбранного сотрудника" Margin="20,10,20,0" Padding="8" BorderBrush="AliceBlue" Foreground="AliceBlue" BorderThickness="1">
                 <Button.Background>
                     <SolidColorBrush Color="#FF105F9E"/>
                 </Button.Background>
             </Button>
-            <Button Content="Добавить нового сотрудника" Margin="20,10,20,10" Padding="8" BorderBrush="AliceBlue" Foreground="AliceBlue">
+            <Button Content="Добавить нового сотрудника" Margin="20,10,20,10" Padding="8" BorderBrush="AliceBlue" Foreground="AliceBlue" BorderThickness="1">
                 <Button.Background>
                     <SolidColorBrush Color="#FF105F9E"/>
                 </Button.Background>
