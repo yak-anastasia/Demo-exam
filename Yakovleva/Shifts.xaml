@@ -27,7 +27,7 @@
             </DataGrid.Columns>
         </DataGrid>
         <StackPanel Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center">
-            <Button Style="{StaticResource CornerRadius_14}" Content="Создать смену" Margin="20,10,20,10" Padding="8" BorderBrush="AliceBlue" Foreground="AliceBlue" BorderThickness="1" Width="200">
+            <Button Style="{StaticResource CornerRadius_14}" Content="Создать новую смену" Margin="20,10,20,10" Padding="8" BorderBrush="AliceBlue" Foreground="AliceBlue" BorderThickness="1" Width="200">
                 <Button.Background>
                     <SolidColorBrush Color="#FF105F9E"/>
                 </Button.Background>

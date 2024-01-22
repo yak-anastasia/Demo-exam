@@ -263,3 +263,5 @@ C:\Users\Anastasia\Desktop\Demo-exam\Yakovleva\obj\Debug\net8.0-windows\Orders.b
 C:\Users\Anastasia\Desktop\Demo-exam\Yakovleva\obj\Debug\net8.0-windows\Shifts.g.cs
 C:\Users\Anastasia\Desktop\Demo-exam\Yakovleva\obj\Debug\net8.0-windows\Shifts.baml
 C:\Users\Anastasia\Desktop\Demo-exam\Yakovleva\obj\Debug\net8.0-windows\App.baml
+C:\Users\Anastasia\Desktop\Demo-exam\Yakovleva\obj\Debug\net8.0-windows\AddNewShifts.g.cs
+C:\Users\Anastasia\Desktop\Demo-exam\Yakovleva\obj\Debug\net8.0-windows\AddNewShifts.baml
