@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 C:\Users\Anastasia\Desktop\Demo-exam\Yakovleva\App.xaml
-3-774092667
+5-125030995
 
-6-2054507097
+81752354875
 226-1878246671
-AdminWindow.xaml;EmployeeManagement.xaml;MainWindow.xaml;
+AddEmployee.xaml;AdminWindow.xaml;EmployeeManagement.xaml;MainWindow.xaml;Orders.xaml;
 
 False
 

@@ -256,3 +256,7 @@ C:\Users\Anastasia\Desktop\Demo-exam\Yakovleva\obj\Debug\net8.0-windows\refint\Y
 C:\Users\Anastasia\Desktop\Demo-exam\Yakovleva\obj\Debug\net8.0-windows\Yakovleva.pdb
 C:\Users\Anastasia\Desktop\Demo-exam\Yakovleva\obj\Debug\net8.0-windows\Yakovleva.genruntimeconfig.cache
 C:\Users\Anastasia\Desktop\Demo-exam\Yakovleva\obj\Debug\net8.0-windows\ref\Yakovleva.dll
+C:\Users\Anastasia\Desktop\Demo-exam\Yakovleva\obj\Debug\net8.0-windows\AddEmployee.g.cs
+C:\Users\Anastasia\Desktop\Demo-exam\Yakovleva\obj\Debug\net8.0-windows\Orders.g.cs
+C:\Users\Anastasia\Desktop\Demo-exam\Yakovleva\obj\Debug\net8.0-windows\AddEmployee.baml
+C:\Users\Anastasia\Desktop\Demo-exam\Yakovleva\obj\Debug\net8.0-windows\Orders.baml
