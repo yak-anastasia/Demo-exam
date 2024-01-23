@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Anastasia\Desktop\Demo-exam\Yakovleva\obj\Debug\net8.0-windows\
+C:\Users\IAkovleva.A.A\source\repos\Demo-exam\Yakovleva\obj\Debug\net8.0-windows\
 Yakovleva
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
-C:\Users\Anastasia\Desktop\Demo-exam\Yakovleva\App.xaml
-7-1074360433
+C:\Users\IAkovleva.A.A\source\repos\Demo-exam\Yakovleva\App.xaml
+10580126726
 
-10672096919
-226-1878246671
-AddEmployee.xaml;AddNewShifts.xaml;AdminWindow.xaml;EmployeeManagement.xaml;MainWindow.xaml;Orders.xaml;Shifts.xaml;
+13250524996
+226-969960232
+AddEmployee.xaml;AddNewOrder.xaml;AddNewShifts.xaml;AdminWindow.xaml;Chef.xaml;EmployeeManagement.xaml;MainWindow.xaml;Orders.xaml;Shifts.xaml;Waiter.xaml;
 
 False
 

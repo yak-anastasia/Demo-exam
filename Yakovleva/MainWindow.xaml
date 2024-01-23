@@ -26,17 +26,17 @@
         <!--StackPanel для упорядочивания элементов в столбце и центрирования-->
         <StackPanel Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center">
             <!--Label для отображения текста "Логин:"-->
-            <Label Content="Логин:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10" Foreground="AliceBlue"/>
+            <Label Content="Логин:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10" Foreground="White"/>
             <!--TextBox для ввода логина-->
-            <TextBox x:Name="UsernameTextBox" Width="200" HorizontalAlignment="Left" VerticalAlignment="Top" Background="#3B83BD" BorderBrush="AliceBlue" Margin="10,0,10,0" Height="31"/>
+            <TextBox x:Name="UsernameTextBox" Width="200" HorizontalAlignment="Left" VerticalAlignment="Top" Background="#3B83BD" BorderBrush="White" Margin="10,0,10,0" Height="31"/>
 
             <!--Label для отображения текста "Пароль:"-->
-            <Label Content="Пароль:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10" Foreground="AliceBlue"/>
+            <Label Content="Пароль:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10" Foreground="White"/>
             <!--PasswordBox для ввода пароля-->
-            <PasswordBox x:Name="PasswordBox" Width="200" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,0,10,0" Height="31" Background="#3B83BD" BorderBrush="AliceBlue"/>
+            <PasswordBox x:Name="PasswordBox" Width="200" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,0,10,0" Height="31" Background="#3B83BD" BorderBrush="White"/>
 
             <!--Button для выполнения действия "Войти"-->
-            <Button Style="{StaticResource CornerRadius_14}" Content="Войти" HorizontalAlignment="Center" Margin="10" Height="30" Width="200" Background="AliceBlue" Foreground="#3B83BD" BorderBrush="AliceBlue" FontWeight="Bold"/>
+            <Button Style="{StaticResource CornerRadius_14}" Content="Войти" HorizontalAlignment="Center" Margin="10" Height="30" Width="200" Background="White" Foreground="#3B83BD" BorderBrush="White" FontWeight="Bold"/>
         </StackPanel>
     </Grid>
 </Window>
