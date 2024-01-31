@@ -28,5 +28,10 @@ namespace Yakovleva.Admin
         {
 
         }
+
+        private void EmployeesGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }

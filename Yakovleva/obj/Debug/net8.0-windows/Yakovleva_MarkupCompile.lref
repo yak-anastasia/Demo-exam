@@ -1,13 +1,13 @@
 ﻿
 FC:\Users\IAkovleva.A.A\source\repos\Demo-exam\Yakovleva\App.xaml;;
-FC:\Users\IAkovleva.A.A\source\repos\Demo-exam\Yakovleva\AddEmployee.xaml;;
-FC:\Users\IAkovleva.A.A\source\repos\Demo-exam\Yakovleva\AddNewOrder.xaml;;
-FC:\Users\IAkovleva.A.A\source\repos\Demo-exam\Yakovleva\AddNewShifts.xaml;;
-FC:\Users\IAkovleva.A.A\source\repos\Demo-exam\Yakovleva\AdminWindow.xaml;;
-FC:\Users\IAkovleva.A.A\source\repos\Demo-exam\Yakovleva\Chef.xaml;;
-FC:\Users\IAkovleva.A.A\source\repos\Demo-exam\Yakovleva\EmployeeManagement.xaml;;
 FC:\Users\IAkovleva.A.A\source\repos\Demo-exam\Yakovleva\MainWindow.xaml;;
-FC:\Users\IAkovleva.A.A\source\repos\Demo-exam\Yakovleva\Orders.xaml;;
-FC:\Users\IAkovleva.A.A\source\repos\Demo-exam\Yakovleva\Shifts.xaml;;
-FC:\Users\IAkovleva.A.A\source\repos\Demo-exam\Yakovleva\Waiter.xaml;;
+FC:\Users\IAkovleva.A.A\source\repos\Demo-exam\Yakovleva\Admin\AddEmployee.xaml;;
+FC:\Users\IAkovleva.A.A\source\repos\Demo-exam\Yakovleva\Admin\AddNewShifts.xaml;;
+FC:\Users\IAkovleva.A.A\source\repos\Demo-exam\Yakovleva\Admin\AdminWindow.xaml;;
+FC:\Users\IAkovleva.A.A\source\repos\Demo-exam\Yakovleva\Admin\EmployeeManagement.xaml;;
+FC:\Users\IAkovleva.A.A\source\repos\Demo-exam\Yakovleva\Admin\Orders.xaml;;
+FC:\Users\IAkovleva.A.A\source\repos\Demo-exam\Yakovleva\Admin\Shifts.xaml;;
+FC:\Users\IAkovleva.A.A\source\repos\Demo-exam\Yakovleva\Chef\Chef.xaml;;
+FC:\Users\IAkovleva.A.A\source\repos\Demo-exam\Yakovleva\Waiter\AddNewOrder.xaml;;
+FC:\Users\IAkovleva.A.A\source\repos\Demo-exam\Yakovleva\Waiter\Waiter.xaml;;
 
