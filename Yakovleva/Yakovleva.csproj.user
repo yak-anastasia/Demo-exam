@@ -7,63 +7,63 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
-    <Compile Update="Admin\AddEmployee.xaml.cs">
+    <Compile Update="Views\Admin\AddEmployee.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Waiter\AddNewOrder.xaml.cs">
+    <Compile Update="Views\Waiter\AddNewOrder.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Admin\AddNewShifts.xaml.cs">
+    <Compile Update="Views\Admin\AddNewShifts.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Admin\AdminWindow.xaml.cs">
+    <Compile Update="Views\Admin\AdminWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Chef\Chef.xaml.cs">
+    <Compile Update="Views\Chef\Chef.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Admin\EmployeeManagement.xaml.cs">
+    <Compile Update="Views\Admin\EmployeeManagement.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Admin\Orders.xaml.cs">
+    <Compile Update="Views\Admin\Orders.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Admin\Shifts.xaml.cs">
+    <Compile Update="Views\Admin\Shifts.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Waiter\Waiter.xaml.cs">
+    <Compile Update="Views\Waiter\Waiter.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Page Update="Admin\AddEmployee.xaml">
+    <Page Update="Views\Admin\AddEmployee.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Waiter\AddNewOrder.xaml">
+    <Page Update="Views\Waiter\AddNewOrder.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Admin\AddNewShifts.xaml">
+    <Page Update="Views\Admin\AddNewShifts.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Admin\AdminWindow.xaml">
+    <Page Update="Views\Admin\AdminWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Chef\Chef.xaml">
+    <Page Update="Views\Chef\Chef.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Admin\EmployeeManagement.xaml">
+    <Page Update="Views\Admin\EmployeeManagement.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Admin\Orders.xaml">
+    <Page Update="Views\Admin\Orders.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Admin\Shifts.xaml">
+    <Page Update="Views\Admin\Shifts.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Waiter\Waiter.xaml">
+    <Page Update="Views\Waiter\Waiter.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
