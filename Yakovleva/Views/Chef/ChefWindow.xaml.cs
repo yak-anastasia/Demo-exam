@@ -12,16 +12,21 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace Yakovleva.Views.Waiter
+namespace Yakovleva.Views.Chef
 {
     /// <summary>
-    /// Interaction logic for Waiter.xaml
+    /// Interaction logic for ChefWindow.xaml
     /// </summary>
-    public partial class Waiter : Window
+    public partial class ChefWindow : Window
     {
-        public Waiter()
+        public ChefWindow()
         {
             InitializeComponent();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

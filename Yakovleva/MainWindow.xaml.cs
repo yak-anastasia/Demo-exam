@@ -42,12 +42,12 @@ namespace Yakovleva
                             this.Close();
                             break;
                         case "Официант":
-                            Views.Waiter.Waiter waiterWindow = new Views.Waiter.Waiter();
+                            Views.Waiter.WaiterWindow waiterWindow = new Views.Waiter.WaiterWindow();
                             waiterWindow.Show();
                             this.Close();
                             break;
                         case "Повар":
-                            Views.Chef.Chef chefWindow = new Views.Chef.Chef();
+                            Views.Chef.ChefWindow chefWindow = new Views.Chef.ChefWindow();
                             chefWindow.Show();
                             this.Close();
                             break;

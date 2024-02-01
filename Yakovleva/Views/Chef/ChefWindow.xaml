@@ -1,11 +1,11 @@
-﻿<Window x:Class="Yakovleva.Views.Waiter.Waiter"
+﻿<Window x:Class="Yakovleva.Views.Chef.ChefWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Yakovleva.Views.Waiter"
+        xmlns:local="clr-namespace:Yakovleva.Views.Chef"
         mc:Ignorable="d"
-        Title="Официант" SizeToContent="WidthAndHeight" Background="#3B83BD">
+        Title="Повар" SizeToContent="WidthAndHeight" Background="#3B83BD">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
@@ -29,12 +29,7 @@
             </DataGrid.Columns>
         </DataGrid>
         <StackPanel Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center">
-            <Button Style="{StaticResource CornerRadius_14}" Content="Создать новый заказ" Margin="20,10,20,10" Padding="8" BorderBrush="White" Foreground="White" FontSize="14" BorderThickness="1" Width="200">
-                <Button.Background>
-                    <SolidColorBrush Color="#FF105F9E"/>
-                </Button.Background>
-            </Button>
-            <Button Style="{StaticResource CornerRadius_14}" Content="Выйти" Margin="20,10,20,10" Padding="8" BorderBrush="White" Foreground="White" FontSize="14" BorderThickness="1" Width="200">
+            <Button Style="{StaticResource CornerRadius_14}" Content="Выйти" Margin="20,10,20,10" Padding="8" BorderBrush="White" Foreground="White" FontSize="14" BorderThickness="1" Width="200" Click="Button_Click">
                 <Button.Background>
                     <SolidColorBrush Color="#FF105F9E"/>
                 </Button.Background>

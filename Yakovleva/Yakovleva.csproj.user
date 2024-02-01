@@ -19,7 +19,7 @@
     <Compile Update="Views\Admin\AdminWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Views\Chef\Chef.xaml.cs">
+    <Compile Update="Views\Chef\ChefWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Views\Admin\EmployeeManagement.xaml.cs">
@@ -31,7 +31,7 @@
     <Compile Update="Views\Admin\Shifts.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Views\Waiter\Waiter.xaml.cs">
+    <Compile Update="Views\Waiter\WaiterWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
@@ -48,7 +48,7 @@
     <Page Update="Views\Admin\AdminWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Views\Chef\Chef.xaml">
+    <Page Update="Views\Chef\ChefWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\Admin\EmployeeManagement.xaml">
@@ -63,7 +63,7 @@
     <Page Update="Views\Admin\Shifts.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Views\Waiter\Waiter.xaml">
+    <Page Update="Views\Waiter\WaiterWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
