@@ -17,14 +17,27 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
-        <DataGrid x:Name="EmployeesGrid" AutoGenerateColumns="True" CanUserAddRows="False" Height="250" Background="#FFABD5F7"/>
-        <StackPanel Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,7,0,0">
-            <Button Style="{StaticResource CornerRadius_14}" Content="Уволить выбранного сотрудника" Margin="20,5,20,0" Padding="8" BorderBrush="White" Foreground="White" BorderThickness="1">
+        <DataGrid x:Name="EmployeesGrid" AutoGenerateColumns="False" CanUserAddRows="False" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Height="250" Background="#FFABD5F7">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Имя" Binding="{Binding Name}" Width="*"/>
+                <DataGridTextColumn Header="Фамилия" Binding="{Binding Surname}" Width="*"/>
+                <DataGridTextColumn Header="Роль" Binding="{Binding Role.Name}" Width="*"/>
+                <DataGridTextColumn Header="Login" Binding="{Binding Login}" Width="*"/>
+                <DataGridTextColumn Header="Password Hash" Binding="{Binding Password}" Width="*"/>
+            </DataGrid.Columns>
+        </DataGrid>
+            <StackPanel Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,7,0,0">
+            <Button Style="{StaticResource CornerRadius_14}" Content="Уволить выбранного сотрудника" x:Name="FireEmployeeBtn" Margin="20,5,20,5" Padding="8" BorderBrush="White" Foreground="White" BorderThickness="1" Click="FireEmployeeBtn_Click">
                 <Button.Background>
                     <SolidColorBrush Color="#FF105F9E"/>
                 </Button.Background>
             </Button>
-            <Button Style="{StaticResource CornerRadius_14}" Content="Добавить нового сотрудника" Margin="20,10,20,10" Padding="8" BorderBrush="White" Foreground="White" BorderThickness="1">
+            <Button Style="{StaticResource CornerRadius_14}" Content="Добавить нового сотрудника" x:Name="AddEmployeeBtn" Margin="20,10,20,10" Padding="8" BorderBrush="White" Foreground="White" BorderThickness="1" Click="AddEmployeeBtn_Click">
+                <Button.Background>
+                    <SolidColorBrush Color="#FF105F9E"/>
+                </Button.Background>
+            </Button>
+            <Button Style="{StaticResource CornerRadius_14}" Content="Вернуться назад" x:Name="BackBtn" Margin="20,5,20,10" Padding="8" BorderBrush="White" Foreground="White" BorderThickness="1" Click="BackBtn_Click">
                 <Button.Background>
                     <SolidColorBrush Color="#FF105F9E"/>
                 </Button.Background>

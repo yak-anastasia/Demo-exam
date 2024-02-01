@@ -24,10 +24,32 @@ namespace Yakovleva.Views.Admin
             InitializeComponent();
         }
 
-        private void EmployeeManagement_Click(object sender, RoutedEventArgs e)
+        private void ManageEmployeesBtn_Click(object sender, RoutedEventArgs e)
         {
             EmployeeManagement employeeManagement = new EmployeeManagement();
             employeeManagement.Show();
+            this.Close();
+        }
+
+        private void ManageOrdersBtn_Click(object sender, RoutedEventArgs e)
+        {
+            Orders ordersManagement = new Orders();
+            ordersManagement.Show();
+            this.Close();
+        }
+
+        private void ManageShiftsBtn_Click(object sender, RoutedEventArgs e)
+        {
+            Shifts shiftsManagement = new Shifts();
+            shiftsManagement.Show();
+            this.Close();
+        }
+
+        private void ExitBtn_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow mainWindow = new MainWindow();
+            mainWindow.Show();
+            this.Close();
         }
     }
 }
