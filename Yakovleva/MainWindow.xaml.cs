@@ -36,7 +36,7 @@ namespace Yakovleva
                 {
                     switch (user.Role.Name) 
                     {
-                        case "Админ":
+                        case "Администратор":
                             Views.Admin.AdminWindow adminWindow = new Views.Admin.AdminWindow();
                             adminWindow.Show();
                             this.Close();

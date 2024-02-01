@@ -19,11 +19,11 @@
 
         <DataGrid x:Name="ShiftsGrid" AutoGenerateColumns="True" CanUserAddRows="False" Height="250" Background="#FFABD5F7">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="shifts__id"/>
-                <DataGridTextColumn Header="Дата начала"/>
-                <DataGridTextColumn Header="Дата окончания"/>
-                <DataGridTextColumn Header="Статус"/>
-                <DataGridTextColumn Header="Сотрудники"/>
+                <DataGridTextColumn Header="shifts__id" Width="*"/>
+                <DataGridTextColumn Header="Дата начала" Width="*"/>
+                <DataGridTextColumn Header="Дата окончания" Width="*"/>
+                <DataGridTextColumn Header="Статус" Width="*"/>
+                <DataGridTextColumn Header="Сотрудники" Width="*"/>
             </DataGrid.Columns>
         </DataGrid>
         <StackPanel Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center">

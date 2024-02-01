@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 C:\Users\IAkovleva.A.A\source\repos\Demo-exam\Yakovleva\App.xaml
-101359442922
+10401745262
 
-211094879121
+21-44343046
 226-969960232
-MainWindow.xaml;Views\Admin\AddEmployee.xaml;Views\Admin\AddNewShifts.xaml;Views\Admin\AdminWindow.xaml;Views\Admin\EmployeeManagement.xaml;Views\Admin\Orders.xaml;Views\Admin\Shifts.xaml;Views\Chef\Chef.xaml;Views\Waiter\AddNewOrder.xaml;Views\Waiter\Waiter.xaml;
+MainWindow.xaml;Views\Admin\AddEmployee.xaml;Views\Admin\AddNewShifts.xaml;Views\Admin\AdminWindow.xaml;Views\Admin\EmployeeManagement.xaml;Views\Admin\Orders.xaml;Views\Admin\Shifts.xaml;Views\Chef\ChefWindow.xaml;Views\Waiter\AddNewOrder.xaml;Views\Waiter\WaiterWindow.xaml;
 
 False
 

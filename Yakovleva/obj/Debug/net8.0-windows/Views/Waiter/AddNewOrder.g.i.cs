@@ -53,7 +53,7 @@ namespace Yakovleva.Views.Waiter {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Yakovleva;V1.0.0.0;component/views/waiter/addneworder.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Yakovleva;component/views/waiter/addneworder.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\Views\Waiter\AddNewOrder.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

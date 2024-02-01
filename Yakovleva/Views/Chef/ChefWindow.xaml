@@ -19,13 +19,13 @@
 
         <DataGrid x:Name="ChefGrid" AutoGenerateColumns="True" CanUserAddRows="False" Height="250" Background="#FFABD5F7">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="orders__id"/>
-                <DataGridTextColumn Header="Дата"/>
-                <DataGridTextColumn Header="Статус"/>
-                <DataGridTextColumn Header="Место (стол)"/>
-                <DataGridTextColumn Header="Количество клиентов"/>
-                <DataGridTextColumn Header="Название блюда"/>
-                <DataGridTextColumn Header="Цена"/>
+                <DataGridTextColumn Header="orders__id" Width="*"/>
+                <DataGridTextColumn Header="Дата" Width="*"/>
+                <DataGridTextColumn Header="Статус" Width="*"/>
+                <DataGridTextColumn Header="Место (стол)" Width="*"/>
+                <DataGridTextColumn Header="Количество клиентов" Width="*"/>
+                <DataGridTextColumn Header="Название блюда" Width="*"/>
+                <DataGridTextColumn Header="Цена" Width="*"/>
             </DataGrid.Columns>
         </DataGrid>
         <StackPanel Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center">

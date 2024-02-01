@@ -20,21 +20,29 @@
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Margin="20">
             <StackPanel Margin="10" Orientation="Horizontal">
                 <Label Content="Имя:" Foreground="White" Margin="0,0,25,0"/>
-                <TextBox Width="200" Background="White"/>
+                <TextBox x:Name="NameTextBox" Width="200" Background="White"/>
+            </StackPanel>
+            <StackPanel Margin="10" Orientation="Horizontal">
+                <Label Content="Фамилия:" Foreground="White" Margin="0,0,0,0"/>
+                <TextBox x:Name="SurnameTextBox" Width="200" Background="White"/>
             </StackPanel>
             <StackPanel Margin="10" Orientation="Horizontal">
                 <Label Content="Логин:" Foreground="White" Margin="0,0,15,0"/>
-                <TextBox Width="200" Background="White"/>
+                <TextBox x:Name="LoginTextBox" Width="200" Background="White"/>
             </StackPanel>
             <StackPanel Margin="10" Orientation="Horizontal">
                 <Label Content="Пароль:" Foreground="White" Margin="0,0,8,0"/>
-                <TextBox Width="200" Background="White"/>
+                <TextBox x:Name="PasswordTextBox" Width="200" Background="White"/>
             </StackPanel>
             <StackPanel Margin="10" Orientation="Horizontal">
                 <Label Content="Роль:" Foreground="White" Margin="0,0,23,0"/>
-                <ComboBox Width="200" Background="White"/>
+                <ComboBox x:Name="RoleComboBox" Width="200" Background="White">
+                    <ComboBoxItem>Администратор</ComboBoxItem>
+                    <ComboBoxItem>Повар</ComboBoxItem>
+                    <ComboBoxItem>Официант</ComboBoxItem>
+                </ComboBox>
             </StackPanel>
-            <Button Style="{StaticResource CornerRadius_14}" Content="Добавить" Width="180" MinHeight="30" Margin="0,25,0,5" Background="#FF105F9E" BorderBrush="White" Foreground="White" BorderThickness="1"/>
+            <Button Style="{StaticResource CornerRadius_14}" Content="Добавить" Width="180" MinHeight="30" Margin="0,25,0,5" Background="#FF105F9E" BorderBrush="White" Foreground="White" BorderThickness="1" Click="AddEmployeeBtn_Click"/>
         </StackPanel>
     </Grid>
 </Window>
