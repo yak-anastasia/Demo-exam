@@ -16,10 +16,31 @@
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
-        
-        <DataGrid x:Name="OrdersGrid" AutoGenerateColumns="True" CanUserAddRows="False" Height="250" Background="#FFABD5F7"/>
+
+        <DataGrid x:Name="OrdersGrid" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" AutoGenerateColumns="False" CanUserAddRows="False" Height="250" Background="#FFABD5F7">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Дата" Binding="{Binding Date}"/>
+                <DataGridTextColumn Header="Статус заказа" Binding="{Binding Status}"/>
+                <DataGridTextColumn Header="Имя сотрудника" Binding="{Binding User.Name}"/>
+                <DataGridTextColumn Header="Место" Binding="{Binding Place}"/>
+                <DataGridTextColumn Header="Количество персон" Binding="{Binding CountPerson}"/>
+                <DataGridTemplateColumn Header="Продукты" Width="*">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <ItemsControl ItemsSource="{Binding OrderProducts}">
+                                <ItemsControl.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding Product.Title}"/>
+                                    </DataTemplate>
+                                </ItemsControl.ItemTemplate>
+                            </ItemsControl>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
         <StackPanel Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center">
-            <Button Style="{StaticResource CornerRadius_14}" Content="Вернуться назад" Margin="20,10,20,10" Padding="8" BorderBrush="White" Foreground="White" BorderThickness="1" Width="200">
+            <Button Style="{StaticResource CornerRadius_14}" x:Name="BackBtn" Content="Вернуться назад" Margin="20,10,20,10" Padding="8" BorderBrush="White" Foreground="White" BorderThickness="1" Width="200" Click="BackBtn_Click">
                 <Button.Background>
                     <SolidColorBrush Color="#FF105F9E"/>
                 </Button.Background>
