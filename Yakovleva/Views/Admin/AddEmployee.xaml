@@ -36,11 +36,7 @@
             </StackPanel>
             <StackPanel Margin="10" Orientation="Horizontal">
                 <Label Content="Роль:" Foreground="White" Margin="0,0,23,0"/>
-                <ComboBox x:Name="RoleComboBox" Width="200" Background="White">
-                    <ComboBoxItem>Администратор</ComboBoxItem>
-                    <ComboBoxItem>Повар</ComboBoxItem>
-                    <ComboBoxItem>Официант</ComboBoxItem>
-                </ComboBox>
+                <ComboBox x:Name="RoleComboBox" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="200" Background="White" ItemsSource="{Binding Roles}" DisplayMemberPath="Name"/>
             </StackPanel>
             <Button Style="{StaticResource CornerRadius_14}" Content="Добавить" Width="180" MinHeight="30" Margin="0,25,0,5" Background="#FF105F9E" BorderBrush="White" Foreground="White" BorderThickness="1" Click="AddEmployeeBtn_Click"/>
         </StackPanel>
