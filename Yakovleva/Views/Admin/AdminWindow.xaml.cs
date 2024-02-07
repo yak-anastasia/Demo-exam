@@ -26,22 +26,22 @@ namespace Yakovleva.Views.Admin
 
         private void ManageEmployeesBtn_Click(object sender, RoutedEventArgs e)
         {
-            EmployeeManagement employeeManagement = new EmployeeManagement();
-            employeeManagement.Show();
+            EmployeesWindow employeesWindow = new EmployeesWindow();
+            employeesWindow.Show();
             this.Close();
         }
 
         private void ManageOrdersBtn_Click(object sender, RoutedEventArgs e)
         {
-            Orders ordersManagement = new Orders();
-            ordersManagement.Show();
+            OrdersWindow ordersWindow = new OrdersWindow();
+            ordersWindow.Show();
             this.Close();
         }
 
         private void ManageShiftsBtn_Click(object sender, RoutedEventArgs e)
         {
-            Shifts shiftsManagement = new Shifts();
-            shiftsManagement.Show();
+            ShiftsWindow shiftsWindow = new ShiftsWindow();
+            shiftsWindow.Show();
             this.Close();
         }
 

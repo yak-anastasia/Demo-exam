@@ -415,3 +415,9 @@ C:\Users\Anastasia\Desktop\Demo-exam\Yakovleva\obj\Debug\net8.0-windows\Views\Ad
 C:\Users\Anastasia\Desktop\Demo-exam\Yakovleva\obj\Debug\net8.0-windows\Views\Chef\ChefWindow.baml
 C:\Users\Anastasia\Desktop\Demo-exam\Yakovleva\obj\Debug\net8.0-windows\Views\Waiter\AddNewOrder.baml
 C:\Users\Anastasia\Desktop\Demo-exam\Yakovleva\obj\Debug\net8.0-windows\Views\Waiter\WaiterWindow.baml
+C:\Users\IAkovleva.A.A\source\repos\Demo-exam\Yakovleva\obj\Debug\net8.0-windows\Views\Admin\OrdersWindow.g.cs
+C:\Users\IAkovleva.A.A\source\repos\Demo-exam\Yakovleva\obj\Debug\net8.0-windows\Views\Admin\ShiftsWindow.g.cs
+C:\Users\IAkovleva.A.A\source\repos\Demo-exam\Yakovleva\obj\Debug\net8.0-windows\Views\Admin\AddEmployeeWindow.g.cs
+C:\Users\IAkovleva.A.A\source\repos\Demo-exam\Yakovleva\obj\Debug\net8.0-windows\Views\Admin\AddShiftsWindow.g.cs
+C:\Users\IAkovleva.A.A\source\repos\Demo-exam\Yakovleva\obj\Debug\net8.0-windows\Views\Admin\EmployeesWindow.g.cs
+C:\Users\IAkovleva.A.A\source\repos\Demo-exam\Yakovleva\obj\Debug\net8.0-windows\Views\Waiter\AddOrderWindow.g.cs
