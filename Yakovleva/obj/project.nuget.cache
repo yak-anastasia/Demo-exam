@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/THeKffj2Irls0yjaUeGVJjXHQg/IcUk+y3SeZxaB6134AcDSg6bJvm9uE+fKosJba6ppUw8ZWl7/sKmVCSRyQ==",
+  "dgSpecHash": "nGRkoK4XOEKAuk/fTey3Yi6e27BCrFAOdcEgMHsOOTpxHxmwdynysNUohu3ux5Ycc3UzcFXsVSbg2EJIjzRyGg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\IAkovleva.A.A\\source\\repos\\Demo-exam\\Yakovleva\\Yakovleva.csproj",
+  "projectFilePath": "C:\\Users\\IAkovleva.A.A\\Desktop\\Demo-exam\\Yakovleva\\Yakovleva.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\IAkovleva.A.A\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\IAkovleva.A.A\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

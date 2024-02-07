@@ -13,7 +13,7 @@
     <Compile Update="Views\Waiter\AddOrderWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Views\Admin\AddShiftsWindow.xaml.cs">
+    <Compile Update="Views\Admin\NewShiftWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Views\Admin\AdminWindow.xaml.cs">
@@ -42,7 +42,7 @@
     <Page Update="Views\Waiter\AddOrderWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Views\Admin\AddShiftsWindow.xaml">
+    <Page Update="Views\Admin\NewShiftWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\Admin\AdminWindow.xaml">

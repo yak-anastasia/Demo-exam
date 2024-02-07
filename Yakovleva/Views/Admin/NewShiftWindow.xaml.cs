@@ -15,11 +15,11 @@ using System.Windows.Shapes;
 namespace Yakovleva.Views.Admin
 {
     /// <summary>
-    /// Логика взаимодействия для AddShiftsWindow.xaml
+    /// Логика взаимодействия для NewShiftWindow.xaml
     /// </summary>
-    public partial class AddShiftsWindow : Window
+    public partial class NewShiftWindow : Window
     {
-        public AddShiftsWindow()
+        public NewShiftWindow()
         {
             InitializeComponent();
         }

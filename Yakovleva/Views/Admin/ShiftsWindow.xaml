@@ -17,22 +17,34 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
-        <DataGrid x:Name="ShiftsGrid" AutoGenerateColumns="True" CanUserAddRows="False" Height="250" Background="#FFABD5F7">
+        <DataGrid x:Name="ShiftsGrid" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" AutoGenerateColumns="False" CanUserAddRows="False" Height="250" Background="#FFABD5F7">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="shifts__id" Width="*"/>
-                <DataGridTextColumn Header="Дата начала" Width="*"/>
-                <DataGridTextColumn Header="Дата окончания" Width="*"/>
-                <DataGridTextColumn Header="Статус" Width="*"/>
-                <DataGridTextColumn Header="Сотрудники" Width="*"/>
+                <DataGridTextColumn Header="shifts__id" Binding="{Binding Id}" Width="*"/>
+                <DataGridTextColumn Header="Дата начала" Binding="{Binding StartShift}" Width="*"/>
+                <DataGridTextColumn Header="Дата окончания" Binding="{Binding EndShift}" Width="*"/>
+                <DataGridTextColumn Header="Статус" Binding="{Binding StatusShift}" Width="*"/>
+                <DataGridTemplateColumn Header="Сотрудники" Width="*">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <ItemsControl ItemsSource="{Binding ShiftUsers}">
+                                <ItemsControl.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding User.Name}"/>
+                                    </DataTemplate>
+                                </ItemsControl.ItemTemplate>
+                            </ItemsControl>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
             </DataGrid.Columns>
         </DataGrid>
         <StackPanel Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center">
-            <Button Style="{StaticResource CornerRadius_14}" Content="Создать новую смену" Margin="20,10,20,5" Padding="8" BorderBrush="White" Foreground="White" BorderThickness="1" Width="200">
+            <Button Style="{StaticResource CornerRadius_14}" x:Name="addButton" Content="Создать новую смену" Margin="20,10,20,5" Padding="8" BorderBrush="White" Foreground="White" BorderThickness="1" Width="200">
                 <Button.Background>
                     <SolidColorBrush Color="#FF105F9E"/>
                 </Button.Background>
             </Button>
-            <Button Style="{StaticResource CornerRadius_14}" Content="Вернуться назад" Margin="20,10,20,10" Padding="8" BorderBrush="White" Foreground="White" BorderThickness="1" Width="200">
+            <Button Style="{StaticResource CornerRadius_14}" x:Name="backButton" Content="Вернуться назад" Margin="20,10,20,10" Padding="8" BorderBrush="White" Foreground="White" BorderThickness="1" Width="200">
                 <Button.Background>
                     <SolidColorBrush Color="#FF105F9E"/>
                 </Button.Background>

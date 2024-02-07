@@ -4022,11 +4022,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\IAkovleva.A.A\\source\\repos\\Demo-exam\\Yakovleva\\Yakovleva.csproj",
+      "projectUniqueName": "C:\\Users\\IAkovleva.A.A\\Desktop\\Demo-exam\\Yakovleva\\Yakovleva.csproj",
       "projectName": "Yakovleva",
-      "projectPath": "C:\\Users\\IAkovleva.A.A\\source\\repos\\Demo-exam\\Yakovleva\\Yakovleva.csproj",
+      "projectPath": "C:\\Users\\IAkovleva.A.A\\Desktop\\Demo-exam\\Yakovleva\\Yakovleva.csproj",
       "packagesPath": "C:\\Users\\IAkovleva.A.A\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\IAkovleva.A.A\\source\\repos\\Demo-exam\\Yakovleva\\obj\\",
+      "outputPath": "C:\\Users\\IAkovleva.A.A\\Desktop\\Demo-exam\\Yakovleva\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\IAkovleva.A.A\\AppData\\Roaming\\NuGet\\NuGet.Config",
