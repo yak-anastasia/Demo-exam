@@ -61,7 +61,7 @@ namespace Yakovleva.Views.Chef {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Yakovleva;component/views/chef/chefwindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Yakovleva;V1.0.0.0;component/views/chef/chefwindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\Views\Chef\ChefWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
