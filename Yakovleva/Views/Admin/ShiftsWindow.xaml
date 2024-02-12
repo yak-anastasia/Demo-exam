@@ -19,9 +19,8 @@
 
         <DataGrid x:Name="ShiftsGrid" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" AutoGenerateColumns="False" CanUserAddRows="False" Height="250" Background="#FFABD5F7">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="shifts__id" Binding="{Binding Id}" Width="*"/>
-                <DataGridTextColumn Header="Дата начала" Binding="{Binding StartShift}" Width="*"/>
-                <DataGridTextColumn Header="Дата окончания" Binding="{Binding EndShift}" Width="*"/>
+                <DataGridTextColumn Header="Дата начала" Binding="{Binding StartShift, StringFormat={}{0:dd.MM.yy HH:mm}}" Width="*"/>
+                <DataGridTextColumn Header="Дата окончания" Binding="{Binding EndShift, StringFormat={}{0:dd.MM.yy HH:mm}}" Width="*"/>
                 <DataGridTextColumn Header="Статус" Binding="{Binding StatusShift}" Width="*"/>
                 <DataGridTemplateColumn Header="Сотрудники" Width="*">
                     <DataGridTemplateColumn.CellTemplate>
@@ -29,7 +28,14 @@
                             <ItemsControl ItemsSource="{Binding ShiftUsers}">
                                 <ItemsControl.ItemTemplate>
                                     <DataTemplate>
-                                        <TextBlock Text="{Binding User.Name}"/>
+                                        <TextBlock>
+                                            <TextBlock.Text>
+                                                <MultiBinding StringFormat="{}{0} {1}">
+                                                    <Binding Path="User.Name"/>
+                                                    <Binding Path="User.Surname"/>
+                                                </MultiBinding>
+                                            </TextBlock.Text>
+                                        </TextBlock>
                                     </DataTemplate>
                                 </ItemsControl.ItemTemplate>
                             </ItemsControl>

@@ -10,6 +10,9 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Microsoft.EntityFrameworkCore;
+using Yakovleva.Views.Admin;
+using Yakovleva.Views.Waiter;
+using Yakovleva.Views.Chef;
 
 namespace Yakovleva
 {
@@ -26,30 +29,25 @@ namespace Yakovleva
         private void LoginButton_Click(object sender, RoutedEventArgs e)
         {
             //Получаем введенные данные из TextBox и PasswordBox
-            string username = UsernameTextBox.Text;
-            string password = PasswordBox.Password;
+            var username = UsernameTextBox.Text;
+            var password = PasswordBox.Password;
 
             using (var context = new YakovlevaContext())
             {
                 var user = context.Users.Include(u => u.Role).FirstOrDefault(u => u.Login == username && u.Password == password);
+
                 if (user != null)
                 {
                     switch (user.Role.Name) 
                     {
                         case "Администратор":
-                            Views.Admin.AdminWindow adminWindow = new Views.Admin.AdminWindow();
-                            adminWindow.Show();
-                            this.Close();
+                            NavigateToWindow(new AdminWindow());
                             break;
                         case "Официант":
-                            Views.Waiter.WaiterWindow waiterWindow = new Views.Waiter.WaiterWindow();
-                            waiterWindow.Show();
-                            this.Close();
+                            NavigateToWindow(new WaiterWindow());
                             break;
                         case "Повар":
-                            Views.Chef.ChefWindow chefWindow = new Views.Chef.ChefWindow();
-                            chefWindow.Show();
-                            this.Close();
+                            NavigateToWindow(new ChefWindow());
                             break;
                         default:
                             MessageBox.Show("Неизвестная роль пользователя");
@@ -61,6 +59,12 @@ namespace Yakovleva
                     MessageBox.Show("Неверный логин или пароль");
                 }
             }
+        }
+
+        private void NavigateToWindow(Window window)
+        {
+            window.Show();
+            Close();
         }
     }
 }

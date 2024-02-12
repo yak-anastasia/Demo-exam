@@ -24,32 +24,31 @@ namespace Yakovleva.Views.Admin
             InitializeComponent();
         }
 
+        private void ManageButton_Click<T>() where T : Window, new()
+        {
+            var window = new T();
+            window.Show();
+            Close();
+        }   
+        
         private void ManageEmployeesBtn_Click(object sender, RoutedEventArgs e)
         {
-            EmployeesWindow employeesWindow = new EmployeesWindow();
-            employeesWindow.Show();
-            this.Close();
+            ManageButton_Click<EmployeesWindow>();
         }
 
         private void ManageOrdersBtn_Click(object sender, RoutedEventArgs e)
         {
-            OrdersWindow ordersWindow = new OrdersWindow();
-            ordersWindow.Show();
-            this.Close();
+            ManageButton_Click<OrdersWindow>();
         }
 
         private void ManageShiftsBtn_Click(object sender, RoutedEventArgs e)
         {
-            ShiftsWindow shiftsWindow = new ShiftsWindow();
-            shiftsWindow.Show();
-            this.Close();
+            ManageButton_Click<ShiftsWindow>();
         }
 
         private void ExitBtn_Click(object sender, RoutedEventArgs e)
         {
-            MainWindow mainWindow = new MainWindow();
-            mainWindow.Show();
-            this.Close();
+            ManageButton_Click<MainWindow>();
         }
     }
 }

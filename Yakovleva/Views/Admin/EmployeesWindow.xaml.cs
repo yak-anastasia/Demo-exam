@@ -23,7 +23,6 @@ namespace Yakovleva.Views.Admin
     public partial class EmployeesWindow : Window
     {
         private readonly YakovlevaContext _context;
-        private ObservableCollection<User> _employees;
         
         public EmployeesWindow()
         {
@@ -35,44 +34,36 @@ namespace Yakovleva.Views.Admin
 
         private void LoadEmployees()
         {
-            _employees = new ObservableCollection<User>(_context.Users.Include(u => u.Role).Where(u => u.Status == "Active").ToList());
-            EmployeesGrid.ItemsSource = _employees;
+            var employees = _context.Users.Include(u => u.Role).Where(u => u.Status == "Active").ToList();
+            EmployeesGrid.ItemsSource = employees;
         }
 
         private void FireEmployeeBtn_Click(object sender, RoutedEventArgs e)
         {
-            if (EmployeesGrid.SelectedItem != null)
+            var selectedEmployee = EmployeesGrid.SelectedItem as User;
+            if (selectedEmployee != null)
             {
-                var selectedEmployee = EmployeesGrid.SelectedItem as User;
-
-                using (var context = new YakovlevaContext())
-                {
-                    var employeeToUpdate = context.Users.FirstOrDefault(u => u.Id == selectedEmployee.Id);
-                    if (employeeToUpdate != null)
-                    {
-                        employeeToUpdate.Status = "Inactive";
-                        context.SaveChanges();
-                        _employees.Remove(selectedEmployee);
-                    }
-                }
+                selectedEmployee.Status = "Inactive";
+                _context.SaveChanges();
+                EmployeesGrid.Items.Remove(selectedEmployee);
             }
             else
             {
-                MessageBox.Show("Выберите сотрудника для увольнения");
+                MessageBox.Show("Выберите сотрудника для увольнения.");
             }
         }
 
         private void AddEmployeeBtn_Click(object sender, RoutedEventArgs e)
         {
-            AddEmployeeWindow addEmployeeWindow = new AddEmployeeWindow();
+            var addEmployeeWindow = new AddEmployeeWindow();
             addEmployeeWindow.ShowDialog();
             LoadEmployees();
         }
 
         private void BackBtn_Click(object sender, RoutedEventArgs e)
         {
-            AdminWindow adminWindow = new AdminWindow();
-            this.Close();
+            var adminWindow = new AdminWindow();
+            Close();
             adminWindow.Show();
         }
     }
