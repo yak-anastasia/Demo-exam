@@ -19,7 +19,6 @@
 
         <DataGrid x:Name="ChefGrid" AutoGenerateColumns="True" CanUserAddRows="False" Height="250" Background="#FFABD5F7">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="orders__id" Width="*"/>
                 <DataGridTextColumn Header="Дата" Width="*"/>
                 <DataGridTextColumn Header="Статус" Width="*"/>
                 <DataGridTextColumn Header="Место (стол)" Width="*"/>
