@@ -41,7 +41,36 @@ namespace Yakovleva.Views.Chef
             OrdersGrid.ItemsSource = orders;
         }
 
-        
+        private void ButtonPrepare_Click(object sender, RoutedEventArgs e)
+        {
+            if (OrdersGrid.SelectedItem != null && OrdersGrid.SelectedItem is Order selectedOrder)
+            {
+                selectedOrder.Status = "Готовится";
+                _context.SaveChanges();
+                LoadOrders();
+                OrdersGrid.Items.Refresh(); //Обновление данных в DataGrid
+            }
+            else
+            {
+                MessageBox.Show("Выберите заказ для изменения статуса.", "Внимание", MessageBoxButton.OK, MessageBoxImage.Warning);
+            }
+        }
+
+        private void ButtonReady_Click(object sender, RoutedEventArgs e)
+        {
+
+            if (OrdersGrid.SelectedItem != null && OrdersGrid.SelectedItem is Order selectedOrder)
+            {
+                selectedOrder.Status = "Готов";
+                _context.SaveChanges();
+                LoadOrders();
+                OrdersGrid.Items.Refresh(); //Обновление данных в DataGrid
+            }
+            else
+            {
+                MessageBox.Show("Выберите заказ для изменения статуса.", "Внимание", MessageBoxButton.OK, MessageBoxImage.Warning);
+            }
+        }
 
         private void ButtonExit_Click(object sender, RoutedEventArgs e)
         {
