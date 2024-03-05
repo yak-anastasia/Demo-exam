@@ -22,14 +22,6 @@
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Дата" Binding="{Binding Date, StringFormat={}{0:dd.MM.yy HH:mm}}" Width="*"/>
                 <DataGridTextColumn Header="Статус заказа" Binding="{Binding Status}" Width="*"/>
-                <DataGridTextColumn Header="Клиент" Width="*">
-                    <DataGridTextColumn.Binding>
-                        <MultiBinding>
-                            <Binding Path="User.Name"/>
-                            <Binding Path="User.Surname"/>
-                        </MultiBinding>
-                    </DataGridTextColumn.Binding>
-                </DataGridTextColumn>
                 <DataGridTextColumn Header="Место (стол)" Binding="{Binding Place}" Width="*"/>
                 <DataGridTextColumn Header="Количество персон" Width="*"/>
                 <DataGridTemplateColumn Header="Продукты" Width="*">

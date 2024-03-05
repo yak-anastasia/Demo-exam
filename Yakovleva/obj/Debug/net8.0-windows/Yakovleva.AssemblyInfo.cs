@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Yakovleva")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1a1f3c27b77afad33664b29ffca1e7c10a60fad5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+03ee996b876138955d317fc2f38bfaf738cd8bfe")]
 [assembly: System.Reflection.AssemblyProductAttribute("Yakovleva")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Yakovleva")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

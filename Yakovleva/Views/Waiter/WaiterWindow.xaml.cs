@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -26,6 +27,7 @@ namespace Yakovleva.Views.Waiter
         {
             InitializeComponent();
             _context = new YakovlevaContext();
+            LoadOrders();
 
             CreateOrderBtn.Click += (sender, e) =>
             {
@@ -35,7 +37,44 @@ namespace Yakovleva.Views.Waiter
             };
         }
 
-
+        private void LoadOrders()
+        {
+            var orders = _context.Orders
+                .Include(o => o.User)
+                .Include(o => o.OrderProducts)
+                    .ThenInclude(op => op.Product)
+                .Where(o => o.Status == "Новый" || o.Status == "Принят")
+                .ToList();
+            WaiterGrid.ItemsSource = orders;
+        }
+        private void ButtonAdopted_Click(object sender, RoutedEventArgs e)
+        {
+            if (WaiterGrid.SelectedItem != null && WaiterGrid.SelectedItem is Order selectedOrder)
+            {
+                selectedOrder.Status = "Принят";
+                _context.SaveChanges();
+                LoadOrders();
+                WaiterGrid.Items.Refresh(); //Обновление данных в DataGrid
+            }
+            else
+            {
+                MessageBox.Show("Выберите заказ для изменения статуса.", "Внимание", MessageBoxButton.OK, MessageBoxImage.Warning);
+            }
+        }
+        private void ButtonPaid_Click(object sender, RoutedEventArgs e)
+        {
+            if (WaiterGrid.SelectedItem != null && WaiterGrid.SelectedItem is Order selectedOrder)
+            {
+                selectedOrder.Status = "Оплачен";
+                _context.SaveChanges();
+                LoadOrders();
+                WaiterGrid.Items.Refresh(); //Обновление данных в DataGrid
+            }
+            else
+            {
+                MessageBox.Show("Выберите заказ для изменения статуса.", "Внимание", MessageBoxButton.OK, MessageBoxImage.Warning);
+            }
+        }
 
         private void ButtonExit_Click(object sender, RoutedEventArgs e)
         {
@@ -43,5 +82,6 @@ namespace Yakovleva.Views.Waiter
             mainWindow.Show();
             this.Close();
         }
+
     }
 }

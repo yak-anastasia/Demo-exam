@@ -17,7 +17,7 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
-        <DataGrid x:Name="WaiterGrid" AutoGenerateColumns="True" CanUserAddRows="False" Height="250" Background="#FFABD5F7">
+        <DataGrid x:Name="WaiterGrid" AutoGenerateColumns="False" CanUserAddRows="False" ScrollViewer.CanContentScroll="False" Height="250" Background="#FFABD5F7">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Дата" Binding="{Binding Date, StringFormat={}{0:dd.MM.yy HH:mm}}" Width="*"/>
                 <DataGridTextColumn Header="Статус заказа" Binding="{Binding Status}" Width="*"/>
@@ -39,7 +39,7 @@
             </DataGrid.Columns>
         </DataGrid>
         <StackPanel Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center">
-            <Button Style="{StaticResource CornerRadius_14}" Margin="20,10,20,10" Padding="8" BorderBrush="White" Foreground="White" FontSize="14" BorderThickness="1" Width="200">
+            <Button Style="{StaticResource CornerRadius_14}" Margin="20,10,20,10" Padding="8" BorderBrush="White" Foreground="White" FontSize="14" BorderThickness="1" Width="200" Click="ButtonAdopted_Click">
                 <Button.Background>
                     <SolidColorBrush Color="#FF105F9E"/>
                 </Button.Background>
@@ -47,7 +47,7 @@
                     <TextBlock Text="Изменить статус выбранного заказа на 'Принят'" TextWrapping="Wrap" TextAlignment="Center" HorizontalAlignment="Center"/>
                 </Grid>
             </Button>
-            <Button Style="{StaticResource CornerRadius_14}" Margin="20,10,20,10" Padding="8" BorderBrush="White" Foreground="White" FontSize="14" BorderThickness="1" Width="200">
+            <Button Style="{StaticResource CornerRadius_14}" Margin="20,10,20,10" Padding="8" BorderBrush="White" Foreground="White" FontSize="14" BorderThickness="1" Width="200" Click="ButtonPaid_Click">
                 <Button.Background>
                     <SolidColorBrush Color="#FF105F9E"/>
                 </Button.Background>
