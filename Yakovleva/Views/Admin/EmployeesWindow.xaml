@@ -22,8 +22,8 @@
                 <DataGridTextColumn Header="Имя" Binding="{Binding Name}" Width="*"/>
                 <DataGridTextColumn Header="Фамилия" Binding="{Binding Surname}" Width="*"/>
                 <DataGridTextColumn Header="Роль" Binding="{Binding Role.Name}" Width="*"/>
-                <DataGridTextColumn Header="Login" Binding="{Binding Login}" Width="*"/>
-                <DataGridTextColumn Header="Password Hash" Binding="{Binding Password}" Width="*"/>
+                <DataGridTextColumn Header="Логин" Binding="{Binding Login}" Width="*"/>
+                <DataGridTextColumn Header="Пароль" Binding="{Binding Password}" Width="*"/>
             </DataGrid.Columns>
         </DataGrid>
             <StackPanel Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,7,0,0">

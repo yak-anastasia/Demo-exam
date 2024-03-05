@@ -23,5 +23,12 @@ namespace Yakovleva.Views.Waiter
         {
             InitializeComponent();
         }
+
+        
+
+        private void CreateNewOrder_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

@@ -29,6 +29,26 @@ namespace Yakovleva.Views.Admin
 
             var employess = _context.Users.ToList();
             EmployeesListBox.ItemsSource = employess;
+            HourCmb(StartHourCmb);
+            HourCmb(EndHourCmb);
+            MinuteCmb(StartMinuteCmb);
+            MinuteCmb(EndMinuteCmb);
+        }
+
+        private void HourCmb(ComboBox combobox)
+        {
+            for (int i = 0; i <= 24; i++)
+            {
+                combobox.Items.Add(new ComboBoxItem { Content = i.ToString() });
+            }
+        }
+
+        private void MinuteCmb(ComboBox combobox)
+        {
+            for (int i = 0; i <= 60; i++)
+            {
+                combobox.Items.Add(new ComboBoxItem { Content = i.ToString() });
+            }
         }
 
         private async void CreateShiftButton_Click(object sender, RoutedEventArgs e)
