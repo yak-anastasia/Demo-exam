@@ -27,17 +27,17 @@ namespace Yakovleva.Views.Chef
         {
             InitializeComponent();
             _context = new YakovlevaContext();
-            LoadOrders();
+            LoadOrdersAsync();
         }
 
-        private void LoadOrders()
+        private async void LoadOrdersAsync()
         {
-            var orders = _context.Orders
+            var orders = await _context.Orders
                 .Include(o => o.User)
                 .Include(o => o.OrderProducts)
                     .ThenInclude(op => op.Product)
                 .Where(o => o.Status == "Принят" || o.Status == "Готовится")
-                .ToList();
+                .ToListAsync();
             OrdersGrid.ItemsSource = orders;
         }
 
@@ -47,8 +47,7 @@ namespace Yakovleva.Views.Chef
             {
                 selectedOrder.Status = "Готовится";
                 _context.SaveChanges();
-                LoadOrders();
-                OrdersGrid.Items.Refresh(); //Обновление данных в DataGrid
+                LoadOrdersAsync();
             }
             else
             {
@@ -63,8 +62,7 @@ namespace Yakovleva.Views.Chef
             {
                 selectedOrder.Status = "Готов";
                 _context.SaveChanges();
-                LoadOrders();
-                OrdersGrid.Items.Refresh(); //Обновление данных в DataGrid
+                LoadOrdersAsync();
             }
             else
             {

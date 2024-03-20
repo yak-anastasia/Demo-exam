@@ -27,7 +27,7 @@ namespace Yakovleva.Views.Waiter
         {
             InitializeComponent();
             _context = new YakovlevaContext();
-            LoadOrders();
+            LoadOrdersAsync();
 
             CreateOrderBtn.Click += (sender, e) =>
             {
@@ -37,14 +37,13 @@ namespace Yakovleva.Views.Waiter
             };
         }
 
-        private void LoadOrders()
+        private async void LoadOrdersAsync()
         {
-            var orders = _context.Orders
+            var orders = await _context.Orders
                 .Include(o => o.User)
                 .Include(o => o.OrderProducts)
                     .ThenInclude(op => op.Product)
-                .Where(o => o.Status == "Новый" || o.Status == "Принят")
-                .ToList();
+                .ToListAsync();
             WaiterGrid.ItemsSource = orders;
         }
         private void ButtonAdopted_Click(object sender, RoutedEventArgs e)
@@ -53,8 +52,7 @@ namespace Yakovleva.Views.Waiter
             {
                 selectedOrder.Status = "Принят";
                 _context.SaveChanges();
-                LoadOrders();
-                WaiterGrid.Items.Refresh(); //Обновление данных в DataGrid
+                LoadOrdersAsync();
             }
             else
             {
@@ -67,8 +65,7 @@ namespace Yakovleva.Views.Waiter
             {
                 selectedOrder.Status = "Оплачен";
                 _context.SaveChanges();
-                LoadOrders();
-                WaiterGrid.Items.Refresh(); //Обновление данных в DataGrid
+                LoadOrdersAsync();
             }
             else
             {
