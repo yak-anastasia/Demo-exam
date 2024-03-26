@@ -67,7 +67,7 @@ namespace Yakovleva.Views.Admin
                     Login = login.ToLower(),
                     Password = password,
                     RoleId = selectedRole.Id,
-                    Status = "Active"
+                    Status = "Работает"
                 };
 
                 _context.Users.Add(newUser);

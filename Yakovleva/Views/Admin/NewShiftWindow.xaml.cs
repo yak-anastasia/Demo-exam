@@ -37,7 +37,7 @@ namespace Yakovleva.Views.Admin
 
         private void HourCmb(ComboBox combobox)
         {
-            for (int i = 0; i <= 24; i++)
+            for (int i = 0; i <= 23; i++)
             {
                 combobox.Items.Add(new ComboBoxItem { Content = i.ToString() });
             }
@@ -45,7 +45,7 @@ namespace Yakovleva.Views.Admin
 
         private void MinuteCmb(ComboBox combobox)
         {
-            for (int i = 0; i <= 60; i++)
+            for (int i = 0; i <= 59; i++)
             {
                 combobox.Items.Add(new ComboBoxItem { Content = i.ToString() });
             }

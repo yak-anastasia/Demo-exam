@@ -21,19 +21,22 @@ namespace Yakovleva.Views.Waiter
     /// </summary>
     public partial class WaiterWindow : Window
     {
-        private YakovlevaContext _context;
+        private readonly YakovlevaContext _context;
 
-        public WaiterWindow()
+        private Int32 user;
+
+        public WaiterWindow(Int32 currentUser = 1)
         {
             InitializeComponent();
             _context = new YakovlevaContext();
+            this.user = currentUser;
             LoadOrdersAsync();
 
             CreateOrderBtn.Click += (sender, e) =>
             {
-                AddOrderWindow addOrderWindow = new AddOrderWindow();
-                addOrderWindow.Show();
-                this.Close();
+                AddOrderWindow addOrderWindow = new AddOrderWindow(this.user);
+                addOrderWindow.ShowDialog();
+                LoadOrdersAsync();
             };
         }
 
@@ -46,30 +49,20 @@ namespace Yakovleva.Views.Waiter
                 .ToListAsync();
             WaiterGrid.ItemsSource = orders;
         }
-        private void ButtonAdopted_Click(object sender, RoutedEventArgs e)
-        {
-            if (WaiterGrid.SelectedItem != null && WaiterGrid.SelectedItem is Order selectedOrder)
-            {
-                selectedOrder.Status = "Принят";
-                _context.SaveChanges();
-                LoadOrdersAsync();
-            }
-            else
-            {
-                MessageBox.Show("Выберите заказ для изменения статуса.", "Внимание", MessageBoxButton.OK, MessageBoxImage.Warning);
-            }
-        }
+
         private void ButtonPaid_Click(object sender, RoutedEventArgs e)
         {
-            if (WaiterGrid.SelectedItem != null && WaiterGrid.SelectedItem is Order selectedOrder)
+            var selectedOrder = WaiterGrid.SelectedItem as Order;
+            if (selectedOrder != null && selectedOrder.Status == "Готов")
             {
                 selectedOrder.Status = "Оплачен";
                 _context.SaveChanges();
+                MessageBox.Show("Статус заказа успешно сменен на \"Оплачен\"", "Успех", MessageBoxButton.OK, MessageBoxImage.Information);
                 LoadOrdersAsync();
             }
             else
             {
-                MessageBox.Show("Выберите заказ для изменения статуса.", "Внимание", MessageBoxButton.OK, MessageBoxImage.Warning);
+                MessageBox.Show("Вы можете менять статус только для заказов со статусами \"Готов\".", "Внимание", MessageBoxButton.OK, MessageBoxImage.Warning);
             }
         }
 
@@ -80,5 +73,6 @@ namespace Yakovleva.Views.Waiter
             this.Close();
         }
 
+       
     }
 }

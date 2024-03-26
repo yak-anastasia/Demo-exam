@@ -33,11 +33,7 @@
                     <SolidColorBrush Color="#FF105F9E"/>
                 </Button.Background>
             </Button>
-            <Button Style="{StaticResource CornerRadius_14}" Content="Выйти" Margin="10" Height="30" Width="200" BorderBrush="White" FontWeight="Bold" Foreground="#3B83BD" Click="ExitBtn_Click">
-                <Button.Background>
-                    <SolidColorBrush Color="White"/>
-                </Button.Background>
-            </Button>
+            <Button Style="{StaticResource CornerRadius_14}" Content="Выйти" Margin="10" Height="30" Width="200" Background="White" BorderBrush="White" FontWeight="Bold" Foreground="#3B83BD" Click="ExitBtn_Click"/>
         </StackPanel>
     </Grid>
 </Window>

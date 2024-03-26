@@ -17,10 +17,18 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
-        <DataGrid x:Name="WaiterGrid" AutoGenerateColumns="False" CanUserAddRows="False" ScrollViewer.CanContentScroll="False" Height="250" Background="#FFABD5F7">
+        <DataGrid x:Name="WaiterGrid" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" AutoGenerateColumns="False" CanUserAddRows="False" ScrollViewer.CanContentScroll="False">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Дата" Binding="{Binding Date, StringFormat={}{0:dd.MM.yy HH:mm}}" Width="*"/>
                 <DataGridTextColumn Header="Статус заказа" Binding="{Binding Status}" Width="*"/>
+                <DataGridTextColumn Header="Сотрудник" Width="*">
+                    <DataGridTextColumn.Binding>
+                        <MultiBinding StringFormat="{}{0} {1}">
+                            <Binding Path="User.Name"/>
+                            <Binding Path="User.Surname"/>
+                        </MultiBinding>
+                    </DataGridTextColumn.Binding>
+                </DataGridTextColumn>
                 <DataGridTextColumn Header="Место (стол)" Binding="{Binding Place}" Width="*"/>
                 <DataGridTextColumn Header="Количество персон" Binding="{Binding CountPerson}" Width="*"/>
                 <DataGridTemplateColumn Header="Продукты" Width="*">
@@ -38,8 +46,8 @@
                 </DataGridTemplateColumn>
             </DataGrid.Columns>
         </DataGrid>
-        <StackPanel Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center">
-            <Button Style="{StaticResource CornerRadius_14}" Margin="20,10,20,10" Padding="8" BorderBrush="White" Foreground="White" FontSize="14" BorderThickness="1" Width="400" Click="ButtonPaid_Click">
+        <StackPanel Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Button Style="{StaticResource CornerRadius_14}" Margin="20,10,20,10" Padding="8" BorderBrush="White" Foreground="White" FontSize="14" BorderThickness="1" Width="350" Click="ButtonPaid_Click">
                 <Button.Background>
                     <SolidColorBrush Color="#FF105F9E"/>
                 </Button.Background>
@@ -47,16 +55,8 @@
                     <TextBlock Text="Изменить статус выбранного заказа на 'Оплачен'" TextWrapping="Wrap" TextAlignment="Center" HorizontalAlignment="Center"/>
                 </Grid>
             </Button>
-            <Button Style="{StaticResource CornerRadius_14}" Content="Создать новый заказ" x:Name="CreateOrderBtn" Margin="20,10,20,10" Padding="8" BorderBrush="White" Foreground="White" FontSize="14" BorderThickness="1" Width="400">
-                <Button.Background>
-                    <SolidColorBrush Color="#FF105F9E"/>
-                </Button.Background>
-            </Button>
-            <Button Style="{StaticResource CornerRadius_14}" Content="Выйти" Margin="20,10,20,10" Padding="8" BorderBrush="White" Foreground="White" FontSize="14" BorderThickness="1" Width="400" Click="ButtonExit_Click">
-                <Button.Background>
-                    <SolidColorBrush Color="#FF105F9E"/>
-                </Button.Background>
-            </Button>
+            <Button Style="{StaticResource CornerRadius_14}" Content="Создать новый заказ" x:Name="CreateOrderBtn" Margin="20,10,20,10" Padding="8" Background="#FF105F9E" BorderBrush="White" Foreground="White" FontSize="14" BorderThickness="1" Width="350"/>
+            <Button Style="{StaticResource CornerRadius_14}" Content="Выйти" Margin="20,10,20,10" Padding="8" Background="#FF105F9E" BorderBrush="White" Foreground="White" FontSize="14" BorderThickness="1" Width="350" Click="ButtonExit_Click"/>
         </StackPanel>
     </Grid>
 </Window>

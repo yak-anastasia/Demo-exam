@@ -29,12 +29,12 @@ namespace Yakovleva.Views.Admin
             InitializeComponent();
 
             _context = new YakovlevaContext();
-            LoadEmployees();
+            LoadEmployeesAsync();
         }
 
-        private void LoadEmployees()
+        private async void LoadEmployeesAsync()
         {
-            var employees = _context.Users.Include(u => u.Role).Where(u => u.Status == "Active").ToList();
+            var employees = await _context.Users.Include(u => u.Role).ToListAsync();
             EmployeesGrid.ItemsSource = employees;
         }
 
@@ -43,9 +43,10 @@ namespace Yakovleva.Views.Admin
             var selectedEmployee = EmployeesGrid.SelectedItem as User;
             if (selectedEmployee != null)
             {
-                selectedEmployee.Status = "Inactive";
+                selectedEmployee.Status = "Уволен";
                 _context.SaveChanges();
-                EmployeesGrid.Items.Remove(selectedEmployee);
+                MessageBox.Show("Сотрудник успешно уволен", "Уведомление", MessageBoxButton.OK, MessageBoxImage.Information);
+                LoadEmployeesAsync();
             }
             else
             {
@@ -57,7 +58,7 @@ namespace Yakovleva.Views.Admin
         {
             var addEmployeeWindow = new AddEmployeeWindow();
             addEmployeeWindow.ShowDialog();
-            LoadEmployees();
+            LoadEmployeesAsync();
         }
 
         private void BackBtn_Click(object sender, RoutedEventArgs e)

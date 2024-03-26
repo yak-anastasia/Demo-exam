@@ -21,7 +21,7 @@ namespace Yakovleva.Views.Chef
     /// </summary>
     public partial class ChefWindow : Window
     {
-        private YakovlevaContext _context;
+        private readonly YakovlevaContext _context;
 
         public ChefWindow()
         {
@@ -43,10 +43,12 @@ namespace Yakovleva.Views.Chef
 
         private void ButtonPrepare_Click(object sender, RoutedEventArgs e)
         {
-            if (OrdersGrid.SelectedItem != null && OrdersGrid.SelectedItem is Order selectedOrder)
+            var selectedOrder = OrdersGrid.SelectedItem as Order;
+            if (selectedOrder != null && selectedOrder.Status == "Принят")
             {
                 selectedOrder.Status = "Готовится";
                 _context.SaveChanges();
+                MessageBox.Show("Статус заказа успешно сменен на \"Готовится\"", "Успех", MessageBoxButton.OK, MessageBoxImage.Information);
                 LoadOrdersAsync();
             }
             else
@@ -57,11 +59,12 @@ namespace Yakovleva.Views.Chef
 
         private void ButtonReady_Click(object sender, RoutedEventArgs e)
         {
-
-            if (OrdersGrid.SelectedItem != null && OrdersGrid.SelectedItem is Order selectedOrder)
+            var selectedOrder = OrdersGrid.SelectedItem as Order;
+            if (selectedOrder != null && selectedOrder.Status == "Готовится")
             {
                 selectedOrder.Status = "Готов";
                 _context.SaveChanges();
+                MessageBox.Show("Статус заказа успешно сменен на \"Готов\"", "Успех", MessageBoxButton.OK, MessageBoxImage.Information);
                 LoadOrdersAsync();
             }
             else
