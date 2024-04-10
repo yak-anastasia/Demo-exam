@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Yakovleva.Views.Admin"
         mc:Ignorable="d"
-        Title="Управление заказами" SizeToContent="WidthAndHeight" Background="#3B83BD">
+        Title="Управление заказами" WindowState="Maximized" Background="#3B83BD">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>

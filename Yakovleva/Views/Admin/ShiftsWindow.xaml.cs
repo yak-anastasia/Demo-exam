@@ -59,20 +59,9 @@ namespace Yakovleva.Views.Admin
 
         private async void NewShiftButton_Click(object sender, RoutedEventArgs e)
         {
-            if (_newShiftWindow == null || !_newShiftWindow.IsVisible)
-            {
-                _newShiftWindow = new NewShiftWindow();
-                _newShiftWindow.Closed += async (s, args) =>
-                {
-                    _newShiftWindow = null;
-                    await LoadShiftsAsync();
-                };
-                _newShiftWindow.Show();
-            }
-            else
-            {
-                _newShiftWindow.Activate();
-            }
+            var newShiftWindow = new NewShiftWindow();
+            newShiftWindow.ShowDialog();
+            LoadShiftsAsync();
         }
     }
 }
