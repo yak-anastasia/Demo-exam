@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Yakovleva.Views.Admin"
         mc:Ignorable="d"
-        Title="Добавление новых смен" SizeToContent="WidthAndHeight" Background="#3B83BD">
+        Title="Добавление новых смен" SizeToContent="WidthAndHeight" Background="#3B83BD" FontFamily="{StaticResource kreadon}">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>

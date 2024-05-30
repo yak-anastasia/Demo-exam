@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-Z:\Demo-exam\Yakovleva\obj\Debug\net8.0-windows\
+C:\Users\Anastasia\Desktop\Demo-exam\Yakovleva\obj\Debug\net8.0-windows\
 Yakovleva
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
-Z:\Demo-exam\Yakovleva\App.xaml
+C:\Users\Anastasia\Desktop\Demo-exam\Yakovleva\App.xaml
 102099466846
 
 231788448861
-198-294894759
+226-668102936
 MainWindow.xaml;Views\Admin\AddEmployeeWindow.xaml;Views\Admin\AdminWindow.xaml;Views\Admin\EmployeesWindow.xaml;Views\Admin\NewShiftWindow.xaml;Views\Admin\OrdersWindow.xaml;Views\Admin\ShiftsWindow.xaml;Views\Chef\ChefWindow.xaml;Views\Waiter\AddOrderWindow.xaml;Views\Waiter\WaiterWindow.xaml;
 
 True

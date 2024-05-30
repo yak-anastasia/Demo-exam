@@ -54,7 +54,7 @@ namespace Yakovleva.Views.Admin
             }
         }
 
-        private void AddEmployeeBtn_Click(object sender, RoutedEventArgs e)
+        private async void AddEmployeeBtn_Click(object sender, RoutedEventArgs e)
         {
             var addEmployeeWindow = new AddEmployeeWindow();
             addEmployeeWindow.ShowDialog();

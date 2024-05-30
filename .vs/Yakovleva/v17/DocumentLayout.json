@@ -7,24 +7,16 @@
       "RelativeMoniker": "D:0:0:{DC0861C3-8D70-4651-8712-269586FB2A2D}|Yakovleva\\Yakovleva.csproj|solutionrelative:yakovleva\\views\\waiter\\waiterwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DC0861C3-8D70-4651-8712-269586FB2A2D}|Yakovleva\\Yakovleva.csproj|c:\\users\\anastasia\\desktop\\demo-exam\\yakovleva\\views\\waiter\\waiterwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DC0861C3-8D70-4651-8712-269586FB2A2D}|Yakovleva\\Yakovleva.csproj|solutionrelative:yakovleva\\views\\waiter\\waiterwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DC0861C3-8D70-4651-8712-269586FB2A2D}|Yakovleva\\Yakovleva.csproj|c:\\users\\anastasia\\desktop\\demo-exam\\yakovleva\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{DC0861C3-8D70-4651-8712-269586FB2A2D}|Yakovleva\\Yakovleva.csproj|solutionrelative:yakovleva\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DC0861C3-8D70-4651-8712-269586FB2A2D}|Yakovleva\\Yakovleva.csproj|c:\\users\\anastasia\\desktop\\demo-exam\\yakovleva\\views\\chef\\chefwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DC0861C3-8D70-4651-8712-269586FB2A2D}|Yakovleva\\Yakovleva.csproj|solutionrelative:yakovleva\\views\\chef\\chefwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DC0861C3-8D70-4651-8712-269586FB2A2D}|Yakovleva\\Yakovleva.csproj|c:\\users\\anastasia\\desktop\\demo-exam\\yakovleva\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{DC0861C3-8D70-4651-8712-269586FB2A2D}|Yakovleva\\Yakovleva.csproj|solutionrelative:yakovleva\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DC0861C3-8D70-4651-8712-269586FB2A2D}|Yakovleva\\Yakovleva.csproj|c:\\users\\anastasia\\desktop\\demo-exam\\yakovleva\\views\\waiter\\addorderwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DC0861C3-8D70-4651-8712-269586FB2A2D}|Yakovleva\\Yakovleva.csproj|solutionrelative:yakovleva\\views\\waiter\\addorderwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DC0861C3-8D70-4651-8712-269586FB2A2D}|Yakovleva\\Yakovleva.csproj|c:\\users\\anastasia\\desktop\\demo-exam\\yakovleva\\views\\waiter\\addorderwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{DC0861C3-8D70-4651-8712-269586FB2A2D}|Yakovleva\\Yakovleva.csproj|solutionrelative:yakovleva\\views\\waiter\\addorderwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DC0861C3-8D70-4651-8712-269586FB2A2D}|Yakovleva\\Yakovleva.csproj|c:\\users\\anastasia\\desktop\\demo-exam\\yakovleva\\views\\chef\\chefwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{DC0861C3-8D70-4651-8712-269586FB2A2D}|Yakovleva\\Yakovleva.csproj|solutionrelative:yakovleva\\views\\chef\\chefwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{DC0861C3-8D70-4651-8712-269586FB2A2D}|Yakovleva\\Yakovleva.csproj|c:\\users\\anastasia\\desktop\\demo-exam\\yakovleva\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC0861C3-8D70-4651-8712-269586FB2A2D}|Yakovleva\\Yakovleva.csproj|solutionrelative:yakovleva\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,46 +26,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ChefWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\Anastasia\\Desktop\\Demo-exam\\Yakovleva\\Views\\Chef\\ChefWindow.xaml",
-              "RelativeDocumentMoniker": "Yakovleva\\Views\\Chef\\ChefWindow.xaml",
-              "ToolTip": "C:\\Users\\Anastasia\\Desktop\\Demo-exam\\Yakovleva\\Views\\Chef\\ChefWindow.xaml",
-              "RelativeToolTip": "Yakovleva\\Views\\Chef\\ChefWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-03-25T22:06:44.108Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ChefWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Anastasia\\Desktop\\Demo-exam\\Yakovleva\\Views\\Chef\\ChefWindow.xaml.cs",
-              "RelativeDocumentMoniker": "Yakovleva\\Views\\Chef\\ChefWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\Anastasia\\Desktop\\Demo-exam\\Yakovleva\\Views\\Chef\\ChefWindow.xaml.cs",
-              "RelativeToolTip": "Yakovleva\\Views\\Chef\\ChefWindow.xaml.cs",
-              "ViewState": "AQIAAAQAAAAAAAAAAAAYwBcAAAAYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-25T20:23:57.013Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "WaiterWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Anastasia\\Desktop\\Demo-exam\\Yakovleva\\Views\\Waiter\\WaiterWindow.xaml.cs",
-              "RelativeDocumentMoniker": "Yakovleva\\Views\\Waiter\\WaiterWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\Anastasia\\Desktop\\Demo-exam\\Yakovleva\\Views\\Waiter\\WaiterWindow.xaml.cs",
-              "RelativeToolTip": "Yakovleva\\Views\\Waiter\\WaiterWindow.xaml.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAB0AAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-25T22:08:43.625Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -83,32 +37,43 @@
               "ToolTip": "C:\\Users\\Anastasia\\Desktop\\Demo-exam\\Yakovleva\\Views\\Waiter\\WaiterWindow.xaml",
               "RelativeToolTip": "Yakovleva\\Views\\Waiter\\WaiterWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-03-25T22:08:40.536Z",
+              "WhenOpened": "2024-05-30T06:07:53.052Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AddOrderWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\Anastasia\\Desktop\\Demo-exam\\Yakovleva\\Views\\Waiter\\AddOrderWindow.xaml",
-              "RelativeDocumentMoniker": "Yakovleva\\Views\\Waiter\\AddOrderWindow.xaml",
-              "ToolTip": "C:\\Users\\Anastasia\\Desktop\\Demo-exam\\Yakovleva\\Views\\Waiter\\AddOrderWindow.xaml",
-              "RelativeToolTip": "Yakovleva\\Views\\Waiter\\AddOrderWindow.xaml",
+              "DocumentIndex": 2,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\Anastasia\\Desktop\\Demo-exam\\Yakovleva\\App.xaml",
+              "RelativeDocumentMoniker": "Yakovleva\\App.xaml",
+              "ToolTip": "C:\\Users\\Anastasia\\Desktop\\Demo-exam\\Yakovleva\\App.xaml",
+              "RelativeToolTip": "Yakovleva\\App.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-03-25T22:08:46.17Z",
+              "WhenOpened": "2024-05-30T05:56:19.252Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "AddOrderWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Anastasia\\Desktop\\Demo-exam\\Yakovleva\\Views\\Waiter\\AddOrderWindow.xaml.cs",
-              "RelativeDocumentMoniker": "Yakovleva\\Views\\Waiter\\AddOrderWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\Anastasia\\Desktop\\Demo-exam\\Yakovleva\\Views\\Waiter\\AddOrderWindow.xaml.cs",
-              "RelativeToolTip": "Yakovleva\\Views\\Waiter\\AddOrderWindow.xaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEQAAAAAAAAA",
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Anastasia\\Desktop\\Demo-exam\\Yakovleva\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Yakovleva\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\Anastasia\\Desktop\\Demo-exam\\Yakovleva\\MainWindow.xaml.cs",
+              "RelativeToolTip": "Yakovleva\\MainWindow.xaml.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAAxwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-25T14:22:50.808Z",
+              "WhenOpened": "2024-05-13T17:00:12.245Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\Anastasia\\Desktop\\Demo-exam\\Yakovleva\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "Yakovleva\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\Anastasia\\Desktop\\Demo-exam\\Yakovleva\\MainWindow.xaml",
+              "RelativeToolTip": "Yakovleva\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-13T17:00:11.374Z",
               "EditorCaption": ""
             }
           ]
